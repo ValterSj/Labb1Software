@@ -23,6 +23,7 @@ public class PersonTest {
     public void setAge() {
         // Here i make use of my person object to try out if the setAge method, does whats it supposed to do
         System.out.println("SET AGEgesde");
+        System.out.println("hello");
         expectedAge = 40;
         person.setAge(expectedAge);
         actualAge = person.getAge();
