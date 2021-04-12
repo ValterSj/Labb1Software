@@ -11,7 +11,7 @@ public class PersonTest {
 
     @Test
     public void getAge() {
-        //Right here i make use of the person object to se if the getAgeI method returns the right age
+        //Right here i make use of the person object to se if the getAge method returns the right age
         System.out.println("GET AGE!");
         expectedAge = 40;
         actualAge = person.getAge();
@@ -21,8 +21,8 @@ public class PersonTest {
 
     @Test
     public void setAge() {
-        // Here i make use of my person object to try out if the setAgeI method, does whats it supposed to do
-        System.out.println("SET AGE");
+        // Here i make use of my person object to try out if the setAge method, does whats it supposed to do
+        System.out.println("SET AGEgesde");
         expectedAge = 40;
         person.setAge(expectedAge);
         actualAge = person.getAge();
@@ -32,7 +32,7 @@ public class PersonTest {
 
     @Test
     public void getName() {
-        // Right here i control with help of my person object to se that the getNameS method is working correctly
+        // Right here i control with help of my person object to se that the getName method is working correctly
         System.out.println("GET NAME");
         expectedName = "Zlatan";
         actualName = person.getName();
@@ -42,7 +42,7 @@ public class PersonTest {
 
     @Test
     public void setName() {
-        // Here, with help of the object called person. I check if the setNameS, sets the value correctly
+        // Here, with help of the object called person. I check if the setName, sets the value correctly
         System.out.println("SET NAME");
         expectedName = "Zlatan";
         person.setName(expectedName);
