@@ -8,6 +8,21 @@ public class PersonTest {
     private Person person = new Person(40, "Zlatan");
     private String expectedName, actualName;
     private int expectedAge, actualAge;
+    private Person constructorCheck;
+
+
+    @Test
+    public void createPerson(){
+        //Right here i create a new object out of expected values to se if the constructor works
+        System.out.println("Person Constructor");
+        expectedAge= 40;
+        expectedName = "Zlatan";
+        constructorCheck = new Person(expectedAge, expectedName);
+        actualAge = constructorCheck.getAge();
+        actualName = constructorCheck.getName();
+        Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expectedName, actualName);
+    }
 
     @Test
     public void getAge() {
